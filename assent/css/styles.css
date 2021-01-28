@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera{
+    height: 4rem;
+    background-color: none;
+    width: 100%;
+    padding: .25rem 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d03b40;
+}
+
+.cabecera__contenedor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera__contenedor img{
+    width: 120px;
+}
+
+.nav__menu a:hover{
+    border-bottom: 1px #ded6c0 solid;
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: #d03b40;
+        visibility: visible;
+        transition: 0.6s;
+    }
+    
+    .show{
+        left: 0;
+    }
+    
+    .nav__menu{
+        height: 100%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .nav__menu a{
+        color: #ded6c0;
+    }
+    
+    .nav__close{
+        font-size: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #f5f0ed ;
+    }
+}
+
+.cabecera__toggle{
+    color: #f5f0ed;
+    font-size: 2rem;
+}
+
+/* home */
+
+#home{
+    background-image: url(../img/Fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 6rem;
+}
+
+.home__contenedor{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #f5f0ed;
+}
+
+.home__contenedor h1{
+    font-size: 44px;
+    margin-top: 3rem;
+}
+
+.home__contenedor p{
+    margin-top: 3rem;
+}
+
+/* servicios */
+
+.servicios__contenedor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicios__brunch{
+    background-color: #d03b40;
+    padding: 3rem 1.5rem;
+    color: #ded6c0;
+    
+}
+
+.servicios__brunch h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    width: 80%;
+    margin: auto;
+}
+
+.servicios__brunch p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+.servicios__fiesta{
+    background-color: #ded6c0;
+    padding: 3rem 1.5rem;
+    color: #d03b40;
+    
+}
+
+.servicios__fiesta h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    width: 80%;
+    margin: auto;
+}
+
+.servicios__fiesta p{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+/* SECCION DESAYUNO */
+
+.desayuno{
+    background-image: url(../img/Fondo2.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desayuno__contenedor{
+    margin: auto;
+    text-align: center;
+    padding: 5rem 1.5rem;
+}
+
+.desayuno__contenedor div{
+    width: 100px;
+    height: 3px;
+    background-color: #f5f0ed;
+    margin: 2rem auto;
+    
+}
+
+.desayuno__titulo{
+    color: #f5f0ed;
+    font-size: 35px;
+}
+
+.desayuno__contenedor p{
+    color: #f5f0ed;
+}
+
+.desayuno__btn{
+    display: block;
+    width: 100%;
+    border: 2px #f5f0ed solid;
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+    color: #f5f0ed;
+    font-size: 14px;
+}
+
+/* SECCION PRODUCTOS */
+
+.productos{
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+}
+
+.productos__contenedor{
+    padding: 3rem 1.5rem;
+    margin: auto;
+    text-align: center;
+
+}
+
+.productos__contenedor article{
+    margin-bottom: 2rem;
+}
+
+.productos__contenedor article:last-child{
+    margin-bottom: 0;
+}
+
+.productos__img{
+    width: 100px;
+    height: 100px;
+    margin: 2rem auto;
+}
+
+.productos__img img{
+    width: 100%;
+}
+
+/* SECCION CONTACTO */
+
+.contacto__contenedor{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__mail{
+    background-color: #ded6c0;
+    color:  #d03b40;
+    padding: 5rem 1.5rem;
+}
+
+.contacto__mail h2{
+    margin-bottom: 2rem;
+    font-size: 28px;
+}
+
+.contacto__lugar{
+    background-color:  #d03b40;
+    color:#ded6c0  ;
+    padding: 5rem 1.5rem;
+}
+
+.contacto__lugar h2{
+    margin-bottom: 2rem;
+    font-size: 28px;
+}
+
+/* FOOTER */
+
+.pie{
+    background-color: #241d1b;
+    color:#ded6c0 ;
+}
+
+.pie__contenedor{
+    padding: 3rem 1.5rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px){
+    .nav__close,
+    .cabecera__toggle{
+        display: none;
+    }
+
+    .nav__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__menu a{
+        margin-left: 1rem;
+        color: #ded6c0;
+    }
+
+    .cabecera__contenedor{
+        max-width: 1024px;
+        width: 90%;
+    }
+    
+    .home__contenedor{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7rem;
+    }
+
+    .home__contenedor h1{
+        width: 60%;
+        margin: auto;
+    }
+
+    .servicios__contenedor{
+        flex-direction: row;
+    }
+
+    .servicios__contenedor article{
+        padding: 8rem;
+    }
+
+    .desayuno__contenedor{
+        width: 40%;
+        margin: auto;
+    }
+
+    .productos__contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .productos__contenedor article{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        text-align: initial;
+        padding: 3rem
+    }
+
+    .productos__img{
+        margin-bottom: 0;
+        margin-right: 0.25rem;
+        width: 20%;
+    }
+
+    .productos__img img{
+        width: 90%;
+        height: auto;
+    }
+
+    .productos__info{
+        width: 80%;
+    }
+
+    .contacto__contenedor{
+        flex-direction: row;
+    }
+
+    .contacto__contenedor article{
+        width: 50%;
+        padding: 8rem;
+    }
+}
